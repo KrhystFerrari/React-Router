@@ -6,7 +6,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 // pages
 import Home from './pages/Home';
 import About from './pages/About';
-import Products from './pages/Products';
+import Product from './pages/Product';
 
 // components
 import Navbar from './components/Navbar';
@@ -22,7 +22,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           {/* 4 - Rota Dinâmica */}
-          <Route path='/products:id' element={<Products />} />
+          <Route path='/products/:id' element={<Product />} />
         </Routes>
       </BrowserRouter>
     </div>
